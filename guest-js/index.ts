@@ -25,13 +25,13 @@ import { Image, transformImage } from "@tauri-apps/api/image";
  * @since 2.0.0
  */
 async function writeText(
-  text: string,
-  opts?: { label?: string },
+	text: string,
+	opts?: { label?: string },
 ): Promise<void> {
-  await invoke("plugin:clipboard-manager|write_text", {
-    label: opts?.label,
-    text,
-  });
+	await invoke("plugin:clipboard-manager|write_text", {
+		label: opts?.label,
+		text,
+	});
 }
 
 /**
@@ -44,7 +44,7 @@ async function writeText(
  * @since 2.0.0
  */
 async function readText(): Promise<string> {
-  return await invoke("plugin:clipboard-manager|read_text");
+	return await invoke("plugin:clipboard-manager|read_text");
 }
 
 /**
@@ -66,11 +66,11 @@ async function readText(): Promise<string> {
  * @since 2.0.0
  */
 async function writeImage(
-  image: string | Image | Uint8Array | ArrayBuffer | number[],
+	image: string | Image | Uint8Array | ArrayBuffer | number[],
 ): Promise<void> {
-  await invoke("plugin:clipboard-manager|write_image", {
-    image: transformImage(image),
-  });
+	await invoke("plugin:clipboard-manager|write_image", {
+		image: transformImage(image),
+	});
 }
 
 /**
@@ -86,9 +86,9 @@ async function writeImage(
  * @since 2.0.0
  */
 async function readImage(): Promise<Image> {
-  return await invoke<number>("plugin:clipboard-manager|read_image").then(
-    (rid) => new Image(rid),
-  );
+	return await invoke<number>("plugin:clipboard-manager|read_image").then(
+		(rid) => new Image(rid),
+	);
 }
 
 /**
@@ -106,10 +106,10 @@ async function readImage(): Promise<Image> {
  * @since 2.0.0
  */
 async function writeHtml(html: string, altHtml?: string): Promise<void> {
-  await invoke("plugin:clipboard-manager|write_html", {
-    html,
-    altHtml,
-  });
+	await invoke("plugin:clipboard-manager|write_html", {
+		html,
+		altHtml,
+	});
 }
 
 /**
@@ -122,7 +122,7 @@ async function writeHtml(html: string, altHtml?: string): Promise<void> {
  * @since 2.0.0
  */
 async function clear(): Promise<void> {
-  await invoke("plugin:clipboard-manager|clear");
+	await invoke("plugin:clipboard-manager|clear");
 }
 
 export { writeText, readText, writeHtml, clear, readImage, writeImage };
