@@ -68,14 +68,14 @@ bindings:
 
 ```javascript
 import {
-	writeText,
-	readText,
-	writeHtml,
-	readHtml,
-	clear,
-} from "@tauri-apps/plugin-clipboard-manager";
-await writeText("Tauri is awesome!");
-assert(await readText(), "Tauri is awesome!");
+  writeText,
+  readText,
+  writeHtml,
+  readHtml,
+  clear
+} from '@tauri-apps/plugin-clipboard-manager'
+await writeText('Tauri is awesome!')
+assert(await readText(), 'Tauri is awesome!')
 ```
 
 ## Contributing
