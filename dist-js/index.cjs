@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
-var core = require("@tauri-apps/api/core");
-var image = require("@tauri-apps/api/image");
+var core = require('@tauri-apps/api/core');
+var image = require('@tauri-apps/api/image');
 
 // Copyright 2019-2023 Tauri Programme within The Commons Conservancy
 // SPDX-License-Identifier: Apache-2.0
