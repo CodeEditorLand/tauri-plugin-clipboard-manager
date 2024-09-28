@@ -1,5 +1,14 @@
 {
+<<<<<<< HEAD
 	"name": "@tauri-apps/plugin-clipboard-manager",
+=======
+	"authors": [
+		"Tauri Programme within The Commons Conservancy"
+	],
+	"dependencies": {
+		"@tauri-apps/api": "2.0.0-rc.5"
+	},
+>>>>>>> 5d864b6755f8d606fb0b2e53e18a5ff938e3df73
 	"exports": {
 		"import": "./dist-js/index.js",
 		"require": "./dist-js/index.cjs",
