@@ -1,4 +1,5 @@
-import { Image } from '@tauri-apps/api/image';
+import { Image } from "@tauri-apps/api/image";
+
 /**
  * Writes plain text to the clipboard.
  * @example
@@ -12,9 +13,12 @@ import { Image } from '@tauri-apps/api/image';
  *
  * @since 2.0.0
  */
-declare function writeText(text: string, opts?: {
-    label?: string;
-}): Promise<void>;
+declare function writeText(
+	text: string,
+	opts?: {
+		label?: string;
+	},
+): Promise<void>;
 /**
  * Gets the clipboard content as plain text.
  * @example
@@ -48,7 +52,9 @@ declare function readText(): Promise<string>;
  *
  * @since 2.0.0
  */
-declare function writeImage(image: string | Image | Uint8Array | ArrayBuffer | number[]): Promise<void>;
+declare function writeImage(
+	image: string | Image | Uint8Array | ArrayBuffer | number[],
+): Promise<void>;
 /**
  * Gets the clipboard content as Uint8Array image.
  *
