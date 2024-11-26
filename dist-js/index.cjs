@@ -111,11 +111,11 @@ async function readImage() {
  *
  * @since 2.0.0
  */
-async function writeHtml(html, altHtml) {
-	await core.invoke("plugin:clipboard-manager|write_html", {
-		html,
-		altHtml,
-	});
+async function writeHtml(html, altText) {
+    await core.invoke('plugin:clipboard-manager|write_html', {
+        html,
+        altText
+    });
 }
 /**
  * Clears the clipboard.
