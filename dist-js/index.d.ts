@@ -108,4 +108,5 @@ declare function writeHtml(html: string, altText?: string): Promise<void>;
  * @since 2.0.0
  */
 declare function clear(): Promise<void>;
+
 export { writeText, readText, writeHtml, clear, readImage, writeImage };
