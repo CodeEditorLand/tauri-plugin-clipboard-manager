@@ -4,12 +4,12 @@
 
 use std::borrow::Cow;
 
-use serde::{de::DeserializeOwned, Deserialize, Serialize};
+use serde::{Deserialize, Serialize, de::DeserializeOwned};
 use tauri::{
-	image::Image,
-	plugin::{PluginApi, PluginHandle},
 	AppHandle,
 	Runtime,
+	image::Image,
+	plugin::{PluginApi, PluginHandle},
 };
 
 #[cfg(target_os = "android")]
